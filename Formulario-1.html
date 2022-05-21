@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario.css">
+    <title>Document</title>
+</head>
+    <body>
+        <H1>Formulario</H1>
+                    
+
+        <fieldset class="caixa-form">
+            <legend>Dados Pessoais</legend>
+
+<form action="/pagina-processa-dados-do-form" method="post">
+<div>
+<label for="nome">Nome:</label>
+<input type="text" id="nome" />
+</div>
+<div>
+<label for="date">Data de Nascimento:</label>
+<input type="date"   id="date" />
+</div>
+<div>
+<label for="email">E-mail:</label>
+<input type="email"     id="email" />
+</div>
+<div>
+<label for="tel" >Celular:</label>
+<input type="tel"  id="tel"/>
+</div>
+</form>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Dados Academicos</legend>
+                
+            <label for="Curso">Curso:</label>
+                <select name="Curso"> 
+                    <option value="Nenhuma">Sem Curso</option>
+                    <option value="Analise de Desenvolvimento de Sistema">ADS</option> 
+                    <option value="Gestão de Tecnologia e Informação">GTI</option> 
+                </select>
+                 <div>      
+            <labrl for="Semestre:">Semestre:</labrl>
+                        <input type="radio" id="1°" name="Semestre:" value="1°">
+                        <label for="1°">1°</label>
+                        <input type="radio" id="2°" name="Semestre:" value="2°">
+                        <label for="2°">2°</label>
+                        <input type="radio" id="3°" name="Semestre:" value="3°">
+                        <label for="3°">3°</label>
+                        <input type="radio" id="4°" name="Semestre:" value="4°">
+                        <label for="4°">4°</label><br>
+                    </div>      
+        </fieldset>
+        <fieldset>
+            <div>
+            <Label for="Trabalhar?">Trabalhar?</Label>
+            <input type="radio" id="Sim" name="Trabalhar?" value="Sim">
+            <label for="Sim">Sim</label>
+            <input type="radio" id="Não" name="Trabalhar?" value="Não">
+            <label for="Não">Não</label>
+            </div>
+            <div>
+                    <label for="Local de Trabalho:">Local de Trabalho:</label>
+                    <input type="text" id="Local de Trabalho:">
+                    <div>
+                    <label for="Descreva sua Experiencia:">Descreva sua Experiencia</label>
+                    </div>
+                    <textarea id="Descreva sua Experincia:" name:"Descreva sua Experiencia" style="width: 481px; height: 76px;"></textarea>
+                    
+            </div>
+        </fieldset>
+
+        <input type="button" value="Gravar">
+        <input type="reset" value="limpar"
+    
+
+    </body>
+</html>
